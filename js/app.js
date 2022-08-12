@@ -19,7 +19,7 @@ xhr.onload = function () {
         <h2 class="accordion-header" id="heading${index}">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
-                ${element["title"]}
+                <b>News ${index+1} -></b> ${element["title"]}
             </button>
         </h2>
         <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}"
