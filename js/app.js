@@ -3,11 +3,12 @@ console.log("NewsRoom");
 
 
 let myNews = document.getElementById("myNews");
-let myApi = "52d898902c18456ea25f132dc3c3b211";
-let source = "bbc-news"
+
+let myApi = "a467d89400423f292b98d2a459e58a52"; //gnews
+
 let xhr = new XMLHttpRequest();
 
-xhr.open("GET", `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${myApi}`, true);
+xhr.open("GET", `https://gnews.io/api/v4/search?q=example&token=${myApi}`, true);
 
 xhr.onload = function () {
     let json = JSON.parse(this.responseText);
